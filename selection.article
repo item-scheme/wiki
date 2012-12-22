@@ -2,9 +2,6 @@
 title: Selection
 ---
 
-Selection
-=========
-
 Selection is a core concept in the Item Scheme universe. It is presumed that a data structure exists such that resources can be identified by strings and are linked together in such a way that they are browsable: in more technical terms, Item Scheme assumes that the data structure of the resources to be _selected_ is isomorphic to a mathematical graph.
 
 Within that graph, any Item defines a series of comma-separated _walks_. A walk starts from an arbitrary named node and follows throught the series of steps in the hierarchy (and the query and the fragment) until it stops in an individual resource: that resource is said to be selected by that specific URI walk. Since Item URIs can have multiple walks, they are by design flexible and fault tolerant: a good URI design will make a series of _fallback_ walks so that if the first walk leads to a dead end, the next might have better luck.
